@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8424738274228345961}
   - component: {fileID: 5863802547933303286}
   - component: {fileID: 8797332477448587692}
+  - component: {fileID: 852347982}
   m_Layer: 0
   m_Name: Lizzard
   m_TagString: Untagged
@@ -180,7 +181,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.24}
@@ -239,3 +240,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 30
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!114 &852347982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770632547827436265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7426e45a756a64eb3367c80b0686a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
