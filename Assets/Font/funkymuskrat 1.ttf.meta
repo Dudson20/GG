@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ea522419aa87d1447a8fbba8de6fe1ed
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Funky Muskrat
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8c154df39b2015e48a414564670a6b99, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
