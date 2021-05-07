@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 7000396382682008270}
   - component: {fileID: 7000396382682008267}
   - component: {fileID: 7000396382682008266}
+  - component: {fileID: 5830372270506668833}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -189,7 +190,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.083982706, y: 0.53659153}
+    - - {x: -0.07751441, y: 0.47190666}
       - {x: -0.2396887, y: 0.24012354}
       - {x: -0.30374432, y: 0.15549064}
       - {x: -0.26321936, y: 0.09575534}
@@ -203,6 +204,20 @@ PolygonCollider2D:
       - {x: 0.11294079, y: 0.0716033}
       - {x: 0.048895597, y: 0.11183691}
       - {x: -0.020551682, y: 0.1375565}
+--- !u!114 &5830372270506668833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7000396382682008269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11865e6505b22c48b1dc7801894e3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 0}
 --- !u!1 &7000396382777099651
 GameObject:
   m_ObjectHideFlags: 0
