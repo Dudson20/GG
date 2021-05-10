@@ -29,9 +29,8 @@ public class LoadLevel : MonoBehaviour
         SceneManager.LoadScene(currensSceneIndex + 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadGameOver()
     {
-        
+        SceneManager.LoadScene("Game Over");
     }
 }
