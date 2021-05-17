@@ -26,7 +26,9 @@ public class healthDisplay : MonoBehaviour
         UpdateDisplay();
         if(health <= 0)
         {
-            FindObjectOfType<LoadLevel>().LoadGameOver();
+            // FindObjectOfType<LoadLevel>().LoadGameOver();
+            FindObjectOfType<LevelController>().LoseCoindition();
+
         }
     }
 }

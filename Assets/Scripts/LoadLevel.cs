@@ -24,6 +24,17 @@ public class LoadLevel : MonoBehaviour
         LoadNextScene();
 ;   }
 
+    public void RestartScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currensSceneIndex);
+    }
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Start");
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currensSceneIndex + 1);
@@ -32,5 +43,10 @@ public class LoadLevel : MonoBehaviour
     public void LoadGameOver()
     {
         SceneManager.LoadScene("Game Over");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit(); 
     }
 }

@@ -7,12 +7,14 @@ public class LevelController : MonoBehaviour
 
     [SerializeField] float waitToLoad = 5f;
     [SerializeField] GameObject WinLabel;
+    [SerializeField] GameObject LoseLabel;
     int NumerOfAttackers = 0;
     bool levelTimerFinished = false;
 
     private void Start()
     {
-        WinLabel.SetActive(false);
+        WinLabel.SetActive(false); 
+        LoseLabel.SetActive(false);
     }
 
     public void AttackerSpawned()
@@ -34,6 +36,12 @@ public class LevelController : MonoBehaviour
         GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(waitToLoad);
         FindObjectOfType<LoadLevel>().LoadNextScene();
+    }
+
+    public void LoseCoindition()
+    {
+        LoseLabel.SetActive(true);
+        Time.timeScale = 0;
     }
 
 
