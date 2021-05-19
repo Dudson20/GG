@@ -45,6 +45,11 @@ public class LoadLevel : MonoBehaviour
         SceneManager.LoadScene("Game Over");
     }
 
+    public void Options()
+    {
+        SceneManager.LoadScene("Options Screen");
+    }
+
     public void QuitGame()
     {
         Application.Quit(); 
