@@ -5,9 +5,10 @@ using UnityEngine;
 public class DMGCollide : MonoBehaviour
 {
 
-    private void OnTriggerEnter2D()
+    private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         FindObjectOfType<healthDisplay>().HealthDown();
+        Destroy(otherCollider.gameObject);
     }
 
 

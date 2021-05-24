@@ -26,8 +26,11 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        var attackerIndex = Random.Range(0, attackerPrefab.Length);
-        Spawn(attackerPrefab[attackerIndex]);
+       // if (spawn) //delay na spawnowanie, usun¹æ if
+       // {
+            var attackerIndex = Random.Range(0, attackerPrefab.Length);
+            Spawn(attackerPrefab[attackerIndex]);
+      //  }
     }
 
 

@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class healthDisplay : MonoBehaviour
 {
-
-    [SerializeField] int health = 100;
+    [SerializeField] float baseHealth = 5;
     [SerializeField] int damage = 1;
+    float health;
     Text healthText;
 
     private void Start()
     {
+        health = baseHealth - PlayerPrefsController.GetDifficulty();
         healthText = GetComponent<Text>();
         UpdateDisplay();
     }
@@ -26,9 +27,13 @@ public class healthDisplay : MonoBehaviour
         UpdateDisplay();
         if(health <= 0)
         {
-            // FindObjectOfType<LoadLevel>().LoadGameOver();
             FindObjectOfType<LevelController>().LoseCoindition();
 
         }
+    }
+
+    public float GetBaseHealth()
+    {
+        return health;
     }
 }

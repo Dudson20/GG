@@ -20,7 +20,14 @@ public class MusicPlayer : MonoBehaviour
 
     public void SetVolume(float volume)
     {
+        if(audioSource)
+        {
         audioSource.volume = volume;
+        }
+        else
+        {
+            Debug.Log("Volume Set");
+        }
     }
 
     private void SetUpSingleton()

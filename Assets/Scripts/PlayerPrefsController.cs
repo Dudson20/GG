@@ -11,9 +11,9 @@ public class PlayerPrefsController : MonoBehaviour
     private const float MaximumVolumeValue = 1f;
 
     private const string DifficultyKey = "Difficulty";
-    public const float DefaultDifficultyValue = 2;
-    private const float MinimumDifficultyValue = 1f;
-    private const float MaximumDifficultyValue = 3f;
+    public const float DefaultDifficultyValue = 1;
+    private const float MinimumDifficultyValue = 0f;
+    private const float MaximumDifficultyValue = 2f;
 
     public static float Volume
     {
@@ -26,12 +26,25 @@ public class PlayerPrefsController : MonoBehaviour
         set => PlayerPrefs.SetFloat(DifficultyKey, Mathf.Clamp(value, MinimumDifficultyValue, MaximumDifficultyValue));
     }
 
+ public static void SetVolume(float volume)
+    {
+        PlayerPrefs.SetFloat(VolumeKey, volume);
+    }
+
     public static float GetVolume()
     {
         return PlayerPrefs.GetFloat(VolumeKey);
     }
-    public static void SetVolume(float volume)
+   
+
+
+    public static void SetDifficulty(float difficulty)
     {
-        PlayerPrefs.SetFloat(VolumeKey, volume);
+        PlayerPrefs.SetFloat(DifficultyKey, difficulty);    
+    }
+
+    public static float GetDifficulty()
+    {
+        return PlayerPrefs.GetFloat(DifficultyKey);
     }
 }

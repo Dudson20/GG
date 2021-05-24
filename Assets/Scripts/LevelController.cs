@@ -24,7 +24,8 @@ public class LevelController : MonoBehaviour
     public void AttackerKilled()
     {
         NumerOfAttackers--;
-        if (NumerOfAttackers <= 0 && levelTimerFinished)
+        var getBaseHealth = FindObjectOfType<healthDisplay>().GetBaseHealth();
+        if (NumerOfAttackers <= 0 && levelTimerFinished && getBaseHealth > 0)
         {
               StartCoroutine(HandleWinCondition());
         }
